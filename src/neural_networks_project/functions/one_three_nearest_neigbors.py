@@ -1,8 +1,7 @@
 import numpy as np
 from math import inf
 import time
-import json
-import os
+
 
 from functions.conv import unpickle
 from functions.compare_to_each import compare_to_each_3nn
