@@ -1,9 +1,0 @@
-__pycache__/
-*.py[cod]
-.venv/
-.env
-.mypy_cache/
-.pytest_cache/
-.DS_Store
-.vscode/*
-!.vscode/settings.json
