@@ -21,7 +21,7 @@ def NN():
     nn3_distances_labels = []    
     log_nn = [] 
     log_nn3 = []
-    repetitions = 20
+    repetitions = len(data_train)
     for i in range(repetitions):
         __time = time.time()
         nn_1 = Find_3_nn(data_train[i], data_batch_1, labels_batch_1)
