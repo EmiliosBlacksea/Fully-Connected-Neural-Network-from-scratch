@@ -41,9 +41,8 @@ def testmain():
     ) = Load_data()
     epoch = 3
     seasons = 50
-    LR = 10**(-4)
+    LR = 10**(-3)
     for e in range(epoch):
-        e = 2
 
         WL1 = None
         WL2 = None
@@ -119,8 +118,7 @@ def testmain():
         savemat("C:/Users/emili/Desktop/NeuralNetworks-Project-1/results/testing_accuracy.mat", {"data": testing_accuracy})
         savemat("C:/Users/emili/Desktop/NeuralNetworks-Project-1/results/training_accuracy.mat", {"data": training_accuracy})
         savemat("C:/Users/emili/Desktop/NeuralNetworks-Project-1/results/Loss.mat", {"data": Loss})
-        break
-
+        
     return FC1, FC2, FC3
 
 def train(data_batch,labels_batch, FC1 = None, FC2 = None , FC3 = None, FC4 = None, FC5 = None, FC6 = None, FC7 = None, dropout = False, keepProp = 1):
